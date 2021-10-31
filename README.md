@@ -83,10 +83,29 @@ command
   
 
   
-Rewrite a code 15 min
-Write the code that asks the user to input 5 subject marks (0-100) and
-Calculates the sum and average making sure that program handles the fail
-command
+Write a code 15min
+
+Write a code that asks the user their age (>=10), and
+according to that give them a message.
+
+Age 10-12: preteen age
+
+Age 13-19: teen-age
+
+Age 20-29: twenties
+
+Age 30-39: thirties
+
+Age 40-49: forties
+
+Age 50-59: fifties
+
+Age 60 or above: sixties or above
+
+Make sure that the age is from 10, age before that should
+not be accepted
+
+The code should be able to handle the incorrect input
   
       #include<iostream>
     using namespace std;
