@@ -153,6 +153,56 @@ The code should be able to handle the incorrect input
        }
     }
 
+Improved version
+
+        #include<iostream>
+        using namespace std;
+        int main()
+        {
+            int age;
+            cout << "Age please (not below 10): " << endl;
+            cin >> age;
+
+            if (std::cin.fail())
+            {
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                std::cout << "\nIncorrect command\n ";
+            }
+            else if (age >= 10 && age <= 12)
+            {
+                cout << age << " is Preteen age" << endl;
+            }
+            else if (age >= 13 && age <= 19)
+            {
+                cout << age << " is teen-age" << endl;
+            }
+            else if (age >= 20 && age <= 29)
+            {
+                cout << age << " is twenties" << endl;
+            }
+            else if (age >= 30 && age <= 39)
+            {
+                cout << age << " is thirties" << endl;
+            }
+            else if (age >= 40 && age <= 49)
+            {
+                cout << age << " is fourthies" << endl;
+            }
+            else if (age >= 50 && age <= 59)
+            {
+                cout << age << " is fifthies" << endl;
+            }
+            else if (age >= 60)
+            {
+                cout << age << " is sixties or above" << endl;
+            }
+            else 
+            {
+                cout << "\nI said not below 10.\n" << "Please enter the valid age.\n";
+            }
+        }
+
   
 Write a code that only takes one input from the user 10 min (In Progress)
   
