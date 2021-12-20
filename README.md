@@ -206,4 +206,21 @@ Improved version
   
 Write a code that only takes one input from the user 10 min (In Progress)
   
-  
+        #include <iostream>
+        #include <string>
+        using namespace std;
+        int main()
+        {
+            cout << "Enter only 1 input" << endl;
+            string input = "";
+            getline(cin, input);
+            if (input.size() != 1)
+            {
+                cout << "You enter more than 1 input." << endl;
+            }
+            else
+            {
+                cout << "You enter 1 input." << endl;
+                cout << "Nice" << endl;
+            }
+        }
